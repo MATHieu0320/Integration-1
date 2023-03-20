@@ -24,12 +24,17 @@ button,#bg{
 .btn1 a,.partie2 button a{
     color: white;
 }
+h2{
+    font-size: 2.8rem;
+    line-height: 80px;
+}
 
 /* ///////////////////////////// */
 header{
     background-color: white;
    padding-top: 40PX;
- height: 85vh;
+ height: 86vh;
+ margin-bottom: 15%;
 }
 nav{
   display: flex;
@@ -117,4 +122,64 @@ border-radius: 8px;
 .partie2 button{
     border-radius: 7px;
     width: 80%;
+}
+
+.centre{
+    text-align: center;
+    margin-bottom: 80px;
+    
+}
+.centre p {
+    font-size: 1.3rem;
+   
+}
+section img{
+    top: -30px;
+    position: absolute;
+    height: 60px;
+    padding: 10px;
+    background-color: rgb(15, 15, 82);
+    border-radius: 50px;
+   
+}
+.section-container{
+    position: relative;
+display: flex;
+align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+max-width: 1200px;
+padding: 0 45px;
+margin-bottom: 150px;
+}
+.section-container::after{
+    position: absolute;
+    content: "";
+    border: 2px solid rgb(79, 214, 255);
+    width: 80%;
+    top: 150px;
+    z-index: -1;
+}
+section p{
+color: #8080807e;
+
+line-height: 20px;
+}
+h3{
+    font-size: 1.5rem;
+    margin: 10px 0 15px 0;
+    
+}
+
+.module1,.module2,.module3{
+    position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 50px 25px;
+  border-radius: 7px;
+}
+.module2{
+            transform: translateY(50px);
+}
+.module3{
+transform: translateY(100px);
 }
