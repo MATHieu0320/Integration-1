@@ -7,6 +7,7 @@
 body{
     background-color: rgb(243, 246, 248);
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 a{
     color: #80808063;
@@ -58,6 +59,7 @@ nav ul{
     justify-content: space-around; 
     align-items: start;
     width: 70%;
+    min-width: 250px;
    
 }
 nav ul li a:hover{
@@ -114,18 +116,19 @@ border-radius: 8px;
    padding: 4%;
    width: 100%;
    gap: 40px;
-   display: grid;
-   grid-template-columns: 80% 20%;
+display: flex;
+width: 100%;
 }
 .partie2 input{
     padding: 12px;
     outline: none;
     border-radius: 8px;
+    width: 80%;
 } 
 
 .partie2 button{
     border-radius: 7px;
-    width: 80%;
+    width: 20%;
 }
 
 .centre{
@@ -177,6 +180,7 @@ background-color: rgb(255, 255, 255);
  padding: 50px 25px;
 border-radius: 7px;
     margin-bottom: 50px;
+    width: 30%;
 }
 .module2{
   transform: translateY(50px);
@@ -206,16 +210,73 @@ grid-template-columns: 30% 15% 15% 15% 25% ;
 max-width: 1200px;
 margin: 0 auto;
 padding: 70PX 45px;
+
 }
 footer ul{
     display: flex;
-   margin-top: 10px;
+   margin-top: 20px;
     flex-direction: column;
     gap: 10px;
     color: gray;
+    
 }
 footer li:hover{
     transition: 0.5s;
     color: white;
     cursor: pointer;
+}
+.footer-icones{
+    display: flex;
+font-size: 20px;
+    justify-content: space-between;
+    width: 70%;
+margin-left: 30%;
+}
+@media screen and (max-width: 1300px) {
+    .partie1-left p{
+         font-size: 1.3rem;
+    }
+    .partie1 img{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 1000px){
+.partie1{
+    grid-template-columns: 45% 55%; 
+     text-align: center;
+}
+.partie1 h1{
+    font-size: clamp(5px, 8vw, 39px);
+  
+}
+.partie1-left p {
+font-size: 0.9rem;
+        }
+}
+@media screen and (max-width: 733px) {
+    nav ul,.nav-right{
+        display: none;
+    }
+    .partie1{
+        display: flex;
+        flex-direction: column-reverse;
+            justify-content: center;
+     align-items: center;
+      gap: 50px;
+       margin: 0 auto;
+ }
+.partie1 h1{
+font-size: clamp(5px, 8vw, 55px);
+    }
+ .partie1-right,.partie1-left{
+ width: 80%;
+}
+.partie1 img,.partie1-left{
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 100%;
+
+}
 }
