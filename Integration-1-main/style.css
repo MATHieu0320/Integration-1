@@ -18,6 +18,7 @@ button,#bg{
  color: white;
  background-color: rgb(79, 214, 255);
   border: none;
+  cursor: pointer;
 }
 .btn1,#bg{
     border-radius: 50px;
@@ -38,8 +39,7 @@ h2{
 header{
     background-color: white;
    padding-top: 40PX;
- height: 86vh;
- margin-bottom: 15%;
+ margin-bottom: 10%;
 }
 nav{
   display: flex;
@@ -54,10 +54,13 @@ nav{
     justify-content: space-between;
 width: 45%;
 }
+.nav-left img {
+    margin-bottom: -4px;
+}
 nav ul{
     display: flex;
     justify-content: space-around; 
-    align-items: start;
+    align-items: center;
     width: 70%;
     min-width: 250px;
    
@@ -101,6 +104,9 @@ grid-template-columns: 55% 45%;
 object-fit: contain;
 width: 100%;
 
+}
+.t{
+background-color: antiquewhite;
 }
 .partie2{
     margin: 0PX auto;
@@ -243,11 +249,10 @@ margin-left: 30%;
 @media screen and (max-width: 1000px){
 .partie1{
     grid-template-columns: 45% 55%; 
-     text-align: center;
+
 }
 .partie1 h1{
-    font-size: clamp(5px, 8vw, 39px);
-  
+    font-size: 2.5rem;
 }
 .partie1-left p {
 font-size: 0.9rem;
@@ -260,12 +265,15 @@ font-size: 0.9rem;
     .partie1{
         display: flex;
         flex-direction: column-reverse;
-            justify-content: center;
+     justify-content: center;
      align-items: center;
-      gap: 50px;
+      gap: 26px;
        margin: 0 auto;
+       text-align: center;
+       margin-bottom: 0PX;
+    
  }
-.partie1 h1{
+.partie1 h1{  text-align: center;
 font-size: clamp(5px, 8vw, 55px);
     }
  .partie1-right,.partie1-left{
@@ -279,4 +287,29 @@ justify-content: center;
 width: 100%;
 
 }
+.partie2-container{
+    display: block;
+}
+.partie2-container button ,.partie2-container input{
+width: 100%;
+margin: 10PX auto;
+padding: 15PX;
+}
+.centre h2{
+    font-size: 2rem;
+}
+.centre p {
+    font-size: 1rem;
+}
+.section-container{
+   display: flex;
+   flex-direction: column;
+}
+.module1,.module2,.module3{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10% 5%;
 }
