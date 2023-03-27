@@ -257,7 +257,13 @@ margin-left: 30%;
 .partie1-left p {
 font-size: 0.9rem;
         }
+ .footer-container {
+
+    grid-template-columns: 20% 19% 18% 18% 25%;
 }
+}
+
+ 
 @media screen and (max-width: 733px) {
     nav ul,.nav-right{
         display: none;
@@ -313,3 +319,28 @@ padding: 15PX;
     text-align: center;
     padding: 10% 5%;
 }
+.section-container::after{
+   transform: rotate(270deg);
+   top: 58%;
+
+}
+.section2 h2{
+    font-size: 2rem;
+}
+.footer-container
+,.footer-un li,span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  
+}
+.footer-container h1{
+    margin-bottom: 20px;
+}
+.footer-icones{
+    margin: 20px auto;
+    width: 30%;
+}
+ }
